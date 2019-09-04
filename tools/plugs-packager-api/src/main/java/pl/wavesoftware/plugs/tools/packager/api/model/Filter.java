@@ -32,6 +32,5 @@ public interface Filter {
    * @return a filtered dependencies
    * @throws RepackageFailed if filtering cant be done
    */
-  Set<Artifact> filterDependencies(Set<Artifact> dependencies)
-    throws RepackageFailed;
+  Set<Artifact> filterDependencies(Set<Artifact> dependencies);
 }

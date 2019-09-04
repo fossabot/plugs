@@ -14,19 +14,13 @@
  * limitations under the License.
  */
 
-package pl.wavesoftware.plugs.tools.packager.api.model;
-
 /**
- * This interface represent a block of code that should be execute as a
- * alternative to the basic operation.
+ * @author <a href="mailto:krzysztof.suszynski@wavesoftware.pl">Krzysztof Suszynski</a>
+ * @since 2019-01-03
  */
-@FunctionalInterface
-public interface Or {
-  /**
-   * Consumes a block of code
-   *
-   * @param block a block of code
-   * @throws RepackageFailed if repackaging has failed for a some kind of reason
-   */
-  void or(CodeBlock block);
-}
+@ReturnTypesAreNonnullByDefault
+@ParametersAreNonnullByDefault
+package pl.wavesoftware.plugs.api;
+
+import pl.wavesoftware.eid.api.ReturnTypesAreNonnullByDefault;
+import javax.annotation.ParametersAreNonnullByDefault;
